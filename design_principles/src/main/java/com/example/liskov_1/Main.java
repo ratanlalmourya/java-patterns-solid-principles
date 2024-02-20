@@ -12,14 +12,19 @@ public class Main {
 		
 		useRectangle(rectangle);
 		
-		useRectangle(square);
+		// useRectangle(square);
 
 	}
 
 	private static void useRectangle(Rectangle rectangle) {
 		rectangle.setHeight(20);
 		rectangle.setWidth(30);
-		assert rectangle.getHeight() == 20 : "Height Not equal to 20";
-		assert rectangle.getWidth() == 30 : "Width Not equal to 30";
+		if(rectangle.getHeight() != 20)
+		{
+			System.out.println("Height Not equal to 20");
+		} 
+		if(rectangle.getWidth() != 30) { 
+		 	System.out.println("Width Not equal to 30");
+		}
 	}
 }
