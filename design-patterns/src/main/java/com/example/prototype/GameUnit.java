@@ -1,5 +1,6 @@
 package com.example.prototype;
 
+import javax.swing.text.Position;
 
 /**
  * This class represents an abstract prototype & defines the clone method
@@ -12,8 +13,15 @@ public abstract class GameUnit implements Cloneable{
 	
 	@Override
 	public GameUnit clone() throws CloneNotSupportedException {
-		
-		return null;
+		GameUnit unit = (GameUnit) super.clone();
+		unit.initialize();
+		return unit;
+	}
+
+	protected void initialize()
+	{
+		this.position = Point3D.ZERO;
+		reset();
 	}
 
 	public GameUnit() {
@@ -33,4 +41,5 @@ public abstract class GameUnit implements Cloneable{
 	public Point3D getPosition() {
 		return position;
 	}
+	protected abstract void reset();
 }
