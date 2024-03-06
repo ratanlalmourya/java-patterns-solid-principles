@@ -8,7 +8,7 @@ public class Client {
 		printMessage(new JSONMessageCreator());
 		printMessage(new TextMessageCreator());
 	}
-	
+
 	public static void printMessage(MessageCreator creator) {
 		
 		Message msg = creator.getMessage();
