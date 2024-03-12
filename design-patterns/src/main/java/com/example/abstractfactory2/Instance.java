@@ -1,4 +1,4 @@
-package com.coffeepoweredcrew.abstractfactory2;
+package com.example.abstractfactory2;
 
 //Represents an abstract product
 public interface Instance {
