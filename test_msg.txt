@@ -1,0 +1,1 @@
+{"msg":"ratan lal mourya","timestamp":{"year":2024,"nano":863110510,"hour":15,"month":"FEBRUARY","dayOfWeek":"THURSDAY","monthValue":2,"dayOfMonth":22,"dayOfYear":53,"minute":36,"second":59,"chronology":{"calendarType":"iso8601","id":"ISO"}}}
