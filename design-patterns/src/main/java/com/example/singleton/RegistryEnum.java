@@ -6,5 +6,11 @@ package com.example.singleton;
  * mechanism and still ensure single instance
  */
 public enum RegistryEnum {
+
+    INSTANCE;
+
+    public void getConfiguration(){
+        
+    }
 	
 }

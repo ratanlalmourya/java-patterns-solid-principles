@@ -6,4 +6,18 @@ package com.example.singleton;
  */
 public class LazyRegistryIODH {
 
+    private LazyRegistryIODH() {
+
+    }
+
+
+    private static class RegistoryHolder {
+        static LazyRegistryIODH INSTANCE = new LazyRegistryIODH();
+    }
+
+
+    public static LazyRegistryIODH getInstance() {
+        return RegistoryHolder.INSTANCE;
+    }
+
 }
