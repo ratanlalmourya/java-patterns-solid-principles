@@ -1,6 +1,6 @@
 package com.example.prototype;
 
-import javax.swing.text.Position;
+
 
 /**
  * This class represents an abstract prototype & defines the clone method
