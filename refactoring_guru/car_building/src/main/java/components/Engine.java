@@ -1,3 +1,4 @@
+package components;
 
 public class Engine {
     
@@ -11,11 +12,11 @@ public class Engine {
     }
 
     public void on() {
-        started = true;
+        this.started = true;
     }
 
     public void off() {
-        started = false;
+        this.started = false;
     }
 
     public boolean isStarted() {
@@ -23,21 +24,20 @@ public class Engine {
     }
 
     public void go(double mileage) {
-        if (started) {
+        if(this.started) {
             this.mileage += mileage;
-        } else {
-            System.err.println("Cannot go(), you must start engine first!");
+        }else {
+            System.out.println("Cannot go(), you must start engine first!");
         }
     }
 
     public double getVolume() {
-        return volume;
+        return this.volume;
     }
 
-    public double getMileage() {
-        return mileage;
+    public double getMileage(){
+        return this.mileage;
     }
+
     
-
-
 }
