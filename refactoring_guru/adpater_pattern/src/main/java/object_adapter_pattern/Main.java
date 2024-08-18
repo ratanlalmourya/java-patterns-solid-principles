@@ -21,7 +21,7 @@ public class Main {
         SquarePegAdapter smallPegAdapter = new SquarePegAdapter(smallSqPeg);
         SquarePegAdapter largePegAdapter = new SquarePegAdapter(largeSqPeg);
 
-        if(hole.fits(smallPegAdapter)) {
+        if(hole.fits(smallPegAdapter)) 
             System.out.println("Square peg w2 fits round hole r5.");
         }
 
