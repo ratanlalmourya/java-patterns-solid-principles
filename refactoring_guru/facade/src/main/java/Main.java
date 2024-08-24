@@ -1,5 +1,11 @@
+import java.io.File;
+
+import facade.VideoConversionFacade;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        VideoConversionFacade converter = new VideoConversionFacade();
+        File mp4Video = converter.convertVideo("youtubevideo.ogg", "mp4");
+        System.out.println(mp4Video);
     }
 }
